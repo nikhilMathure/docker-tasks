@@ -6,4 +6,4 @@ RUN apt install -y nginx
 COPY index.html /var/www/html/index.nginx-debian.html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
-CMD service nginx start
+RUN service nginx start
